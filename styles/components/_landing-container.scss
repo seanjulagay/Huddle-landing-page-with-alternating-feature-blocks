@@ -1,0 +1,47 @@
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem 3.5rem auto;
+    .landing-catchphrase {
+        text-align: center;
+        h1 {
+            font-size: 2.7rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.6rem;
+            margin: 3rem auto;
+        }
+        .landing-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.3rem;
+                color: white;
+                background-color: $pink;
+                width: 25rem;
+                height: 4rem;
+                border-radius: 2rem;
+                font-weight: 600;
+                transition: .5s background-color;
+                &:hover {
+                    background-color: lightpink;
+                }
+            }
+        }
+    }
+}
+
+.landing-image-container {
+    margin: 5rem 0;
+    .landing-image {
+        height: auto;
+        width: 33rem;
+    }
+}

@@ -1,0 +1,24 @@
+.footer-container {
+    color: white;
+    margin: 15rem 2rem auto;
+    .footer-logo {
+        display: inline-block;
+        svg {
+            path {
+                fill: white;
+            }
+        }
+    }
+    .footer-details-container {
+        font-size: 1.5rem;
+    }
+    .footer-buttons-container {
+        font-size: 1.7rem;
+        a {
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+        }
+    }
+}
