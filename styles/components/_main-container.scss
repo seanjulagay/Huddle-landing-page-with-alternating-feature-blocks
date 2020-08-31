@@ -12,6 +12,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        border-radius: 1.5rem;
         .main-image-container {
             .main-card-img {
                 height: auto;
@@ -20,14 +21,11 @@
         }
         .main-text-container {
             text-align: center;
-            h1 {
-                font-size: 2rem;
-                margin: 4rem auto auto;
-            }
-            p {
+            .main-card-desc {
                 font-size: 1.4rem;
                 margin: 2rem 5rem auto;
                 color: $text-gray;
+                line-height: 2rem;
             }
         }
     }

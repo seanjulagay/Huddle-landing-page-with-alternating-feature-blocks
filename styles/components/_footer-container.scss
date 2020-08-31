@@ -1,9 +1,10 @@
 .footer-container {
     color: white;
-    margin: 15rem 2rem auto;
+    margin: -3rem 2rem auto;
     .footer-logo {
         display: inline-block;
         svg {
+            margin: auto auto 2rem;
             path {
                 fill: white;
             }
@@ -11,6 +12,20 @@
     }
     .footer-details-container {
         font-size: 1.5rem;
+        margin: auto auto 5rem;
+        .footer-details {
+            display: flex;
+            margin: 2rem auto;
+            .footer-details-img-container {
+                .footer-details-img {
+                    width: 2rem;
+                    height: auto;
+                }
+            }
+            .footer-text {
+                margin: auto 2rem;
+            }
+        }
     }
     .footer-buttons-container {
         font-size: 1.7rem;
@@ -19,6 +34,44 @@
         }
         ul {
             list-style-type: none;
+            li {
+                margin: 2rem auto;
+            }
+        }
+    }
+    .footer-socials-container {
+        display: flex;
+        justify-content: center;
+        .fab {
+            padding: .7rem;
+            width: 3.5rem;
+            text-align: center;
+            border: .2rem solid white;
+            border-radius: 10rem;
+            color: white;
+            font-size: 1.7rem;
+            margin: auto .5rem;
+            background-color: none;
+            transition: .5s color, .5s background-color;
+            &:hover {
+                color: $dark-cyan;
+                background-color: white;
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                display: inline;
+            }
+        }
+    }
+    .footer-copyright-msg {
+        margin: 2rem auto;
+        text-align: center;
+        .copyright-msg {
+            font-weight: 400;
+            color: white;
+            font-size: 1.5rem;
         }
     }
 }
