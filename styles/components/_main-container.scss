@@ -13,20 +13,24 @@
         justify-content: center;
         flex-direction: column;
         border-radius: 1.5rem;
-        .main-image-container {
-            .main-card-img {
-                height: auto;
-                width: 25rem;
+        .main-content-container {
+            .main-image-container {
+                display: flex;
+                justify-content: center;
+                .main-card-img {
+                    height: auto;
+                    width: 25rem;
+                }
             }
-        }
-        .main-text-container {
-            text-align: center;
-            .main-card-desc {
-                font-size: 1.4rem;
-                margin: 2rem 5rem auto;
-                color: $text-gray;
-                line-height: 2rem;
+            .main-text-container {
+                text-align: center;
+                .main-card-desc {
+                    font-size: 1.4rem;
+                    margin: 2rem 5rem auto;
+                    color: $text-gray;
+                    line-height: 2rem;
+                }
             }
-        }
+        } 
     }
 }

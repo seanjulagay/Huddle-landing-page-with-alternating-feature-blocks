@@ -2,7 +2,6 @@
 @import "base/resets";
 @import "base/variables";
 @import "base/typography";
-@import "base/queries";
 @import "base/globals";
 
 @import "components/topheader-container";
@@ -15,3 +14,5 @@
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
+
+@import "base/queries"; //need to be at bottom to override properly

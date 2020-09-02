@@ -19,3 +19,180 @@
         min-height: 100rem;
     }
 }
+
+@media all and (min-width: 620px){
+    header {
+        .landing-container {
+            .landing-image-container {
+                .landing-image {
+                    width: 50rem;
+                }
+            }
+        }
+    }
+}
+
+// MONITOR THRESHOLD, TURN TO DESKTOP VIEW WHEN IT REACHES THIS SIZE
+@media all and (min-width: 1024px){ 
+    header {
+        .topheader-container {
+            margin-left: 3.5rem;
+            margin-right: 3.5rem;
+            padding-top: 3rem;
+            .topheader-logo {
+                .topheader-logo-img {
+                    height: 3rem;
+                }
+            }
+            .topheader-try-container {
+                a {
+                    height: 4rem;
+                    width: 17rem;
+                }
+            }
+        }
+        .landing-container {
+            flex-direction: row;
+            height: 80%;
+            margin: 4rem 5rem;
+            .landing-catchphrase {
+                flex: 2;
+                h1 {
+                    text-align: left;
+                    font-size: 3.5rem;
+                }
+                p { 
+                    text-align: left;
+                }
+                .landing-button-container {
+                    justify-content: left;
+                    a {
+                        height: 5rem;
+                        border-radius: 3rem;
+                    }
+                }
+            }
+            .landing-image-container {
+                flex: 3;
+                .landing-image {
+                    width: 100%;
+                    height: auto;
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+    main {
+        .main-container {
+            .main-card {
+                width: 90rem;
+                height: 30rem;
+                .main-content-container {
+                    display: flex;
+                    margin-left: 8rem;
+                    margin-right: 2rem;
+                    .main-image-container {
+                        .main-card-img {
+                            height: 25rem;
+                            width: auto;
+                        }
+                    }
+                    .main-text-container {
+                        text-align: left;
+                        margin: auto auto;
+                        width: 45%;
+                        .main-card-header {
+                            margin-top: 0; //reset, orig in globals
+                            font-size: 2.5rem;
+                        }
+                        .main-card-desc {
+                            margin: auto; //reset
+                            margin-top: 1rem;
+                        }
+                    }
+                    &.txt-first {
+                        flex-direction: row-reverse;
+                        .main-text-container {
+                            margin-left: 0rem;
+                        }
+                    }
+                    &.img-first {
+                        flex-direction: row;
+                        .main-text-container {
+                            margin-right: 0rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    footer {
+        height: 70vh;
+        min-height: 60rem;
+        .footer-start-container {
+            width: 60rem;
+            height: 20rem;
+            bottom: 13rem;
+            margin: auto auto;
+            .main-card-header {
+                font-size: 2.5rem;
+            }
+            a {
+                width: 30rem;
+                height: 5.5rem;
+                border-radius: 3rem;
+            }
+        }
+        .footer-container {
+            margin-left: 8rem;
+            margin-right: 8rem;
+            display: flex;
+            flex-direction: column;
+            .footer-content-container {
+                height: 20rem;
+                display: flex;
+                align-items: flex-start;
+                .footer-details-container {
+                    flex: 3;
+                }
+                .footer-buttons-container {
+                    flex: 3;
+                    margin-top: 2rem;
+                    .footer-buttons-nav {
+                        ul {
+                            column-count: 2;
+                            li {
+                                margin-top: 0rem; //margin-top causes issues, let margin-bottom do work instead
+                            }
+                        }
+                    }
+                }
+                .footer-socials-container {
+                    flex: 2;
+                    margin-top: 2rem;
+                    justify-content: left;
+                }
+            }
+            .footer-copyright-msg {
+                margin-right: -2rem;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 2560px) { //fix for 1440p
+    body, html {
+        font-size: 20px;
+    }
+    header {
+        .landing-container {
+            .landing-image-container {
+                .landing-image {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
